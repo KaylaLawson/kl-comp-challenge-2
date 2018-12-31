@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
   <main class="container">  
@@ -13,9 +13,9 @@
       <section class="profile">
         <img id="photo" src="images/Static-comp-image.jpg">
         <p>Devin Kapla<em><i class="fas fa-angle-down"></i></em></p>
+        <p class="sidebar-line"></p>
       </section>
       <section class="side-main-nav">
-      <!-- icons and list -->
       <p class="titles">Main</p>
         <ul class="side-lists">
          <li><em class="side-icons"><i class="fas fa-home"></i></em>HOME</li>
@@ -24,6 +24,7 @@
          <li><em class="side-icons"><i class="fas fa-tasks"></i></em>TASKS</li>
          <li><em class="side-icons"><i class="fas fa-calendar-alt"></i></em>CALENDAR</li>
         </ul>
+        <p class="sidebar-line"></p>
       </section>
       <section class="side-admin-nav">
         <!-- icons and list -->
@@ -37,22 +38,29 @@
         </ul>
       </section>
       <section class="side-categories-nav">
-        <!-- check list icon and fun colors -->
         <p class="titles">Categories</p>
         <ul class="side-lists">
-          <i></i><li>Adminstrative</li>
-          <i></i><li>Design</li>
-          <i></i><li>Executives</li>
-          <i></i><li>Human Resources</li>
+          <li><em class="checkboxes box1"><i class="fas fa-check-square"></em></i>Adminstrative</li>
+          <li><em class="checkboxes box2"><i class="fas fa-square"></em></i>Design</li>
+          <li><em class="checkboxes box3"><i class="fas fa-square"></em></i>Executives</li>
+          <li><em class="checkboxes box4"><i class="fas fa-square"></em></i>Human Resources</li>
         </ul>
       </section>
     </aside>
+    <!-- header content -->
     <header>
-      <section class="menu-display">
-        <!-- icon for display of sidebar -->
-      </section>
-      <input type="type" placeholder="Search for a job, task, resume" name="search-input">
-  </header>
+      <i id="left-arrow" class="fas fa-caret-left"></i>
+      <i id="bars" class="fas fa-bars"></i>
+      <i id="search-icon" class="fas fa-search"></i>
+      <input id="input-search" placeholder="Search for a job, task, or resume" type="text" >
+      <i id="user-plus" class="fas fa-user-plus"></i>
+      <i id="clip-list"class="fas fa-clipboard-list"></i>
+      <i id="th" class="fas fa-th"></i>
+    </header>
+    <section class="top-nav">
+      <h1>Customer Service Representative</h1>
+      <p>San Francisco CA</p><i id="dot" class="fas fa-circle"></i><p>Preview this post</p>      
+    </section>
     <footer></footer>
   </main>
 </body>
