@@ -13,7 +13,7 @@
       "sidebar-nav  header    header"
       "sidebar-nav  topnav1   topnav2"
       "sidebar-nav  nav       nav"
-      "sidebar-nav  graph1    graph2"
+      "sidebar-nav  graph     graph"
       "sidebar-nav  buttons   buttons"
       "sidebar-nav  table     social"
 }
@@ -236,13 +236,20 @@ header {
 
 .image {
   height: 320px;
+  margin-left: 150px;
 }
 
 /*graph buttons*/
-.graph-btns {
-  width: 25%;
+.total-btn {
+  margin: 50px 0px 20px 300px;
+  padding: 10px;
+  border-radius: 30px;
 }
-
+.app-btn {
+  padding: 10px;
+  border-radius: 30px;
+  margin: 50px 0px 20px 685px;
+}
 
 
 
