@@ -8,12 +8,13 @@
 .container {
   display: grid;
   grid-template-columns: 180px repeat(2, 1fr); 
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(65 50px 100px 1fr 1fr);
   grid-template-areas: 
-      "sidebar-nav  header   header"
-      "sidebar-nav  top-nav  top-nav"
-      "sidebar-nav  graph1   graph2"
-      "sidebar-nav  table    social";
+      "sidebar-nav  header    header"
+      "sidebar-nav  topnav1   topnav2"
+      "sidebar-nav  nav       nav"
+      "sidebar-nav  graph1    graph2"
+      "sidebar-nav  table     social"
 }
 
 /*Left side vertical navigation*/
@@ -56,7 +57,6 @@
 
 /*header content*/
 header {
-/*  background: #BADA55;*/
   grid-area: header;
   border-bottom: 1px solid lightgrey;
 }
@@ -67,7 +67,7 @@ header {
 }
 
 #bars {
-  color: #9a9a9a;
+  color: #787879;
   margin-right: 10px;
 
 }
@@ -77,7 +77,7 @@ header {
 }
 #input-search {
   border: none;
-  width: 600px;
+  width: 80%;
   margin-right: 20px;
 }
 
@@ -94,6 +94,77 @@ header {
 #th {
   color: #cdccd2;
 }
+
+/*edit-section*/
+.edit-section {
+  display: grid;
+  grid-area: topnav1;
+  padding-left: 50px;
+}
+
+.service-rep {
+  color: #787879;
+  margin-bottom: 0px;
+}
+
+.sanfran {
+  color: #cdccd2;
+  margin-top: 0px;
+}
+
+.preview {
+  color: #00a4ff;
+}
+
+#icon-san-fran {
+  color: #787879;
+  margin: 0px 5px 0px 0px;
+}
+
+.edit-btns {
+  display: inline-flex;
+  grid-area: topnav2;
+  float: right;
+  justify-content: end;
+  margin-top: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.open {
+  color: #787879;
+  border-radius: 30px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#open-dot {
+  color: #74cd00;
+  margin-right: 5px;
+  font-size: 8pt;
+}
+
+.icon-btns{
+  border-radius: 30px;
+  margin: 0px 5px 0px 5px;
+ }
+
+ /*Horizontal nav*/
+ .horizontal-nav {
+  display: inline-flex;
+  grid-area: nav;
+  border-bottom: 1px solid lightgrey;
+  height: 70px;
+ }
+
+ .nav {
+  margin: 30px 10px 10px 0px;
+  padding-left: 50px;
+  color: #787879;
+ }
+
+
+
 
 
 
