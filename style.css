@@ -8,12 +8,13 @@
 .container {
   display: grid;
   grid-template-columns: 180px repeat(2, 1fr); 
-  grid-template-rows: repeat(65 50px 100px 1fr 1fr);
+  grid-template-rows: repeat(6, 55px 100px 80px 1fr);
   grid-template-areas: 
       "sidebar-nav  header    header"
       "sidebar-nav  topnav1   topnav2"
       "sidebar-nav  nav       nav"
       "sidebar-nav  graph1    graph2"
+      "sidebar-nav  buttons   buttons"
       "sidebar-nav  table     social"
 }
 
@@ -59,6 +60,7 @@
 header {
   grid-area: header;
   border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
 }
 
 #left-arrow {
@@ -77,22 +79,29 @@ header {
 }
 #input-search {
   border: none;
-  width: 80%;
+  width: 79%;
   margin-right: 20px;
 }
 
 #user-plus {
   color: #cdccd2;
-  margin: 0px 10px 0px 0px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#user-plus:hover {
+  background-color: #00a4ff;
+  color: #fff; 
 }
 
 #clip-list {
   color: #cdccd2;
-  margin: 0px 20px 0px 10px;
+  padding: 10px;
 }
 
 #th {
   color: #cdccd2;
+  padding: 10px;
 }
 
 /*edit-section*/
@@ -153,15 +162,89 @@ header {
  .horizontal-nav {
   display: inline-flex;
   grid-area: nav;
-  border-bottom: 1px solid lightgrey;
-  height: 70px;
  }
 
  .nav {
-  margin: 30px 10px 10px 0px;
-  padding-left: 50px;
+  margin: 30px 10px 0px 40px;
+  padding: 0px 25px 25px 25px;
   color: #787879;
  }
+
+ .nav:hover {
+  border-bottom: 2px solid #00a4ff;
+ }
+
+ /*graphs*/
+.graphs {
+  background: #ecf2f6;
+  grid-column: span 2;
+}
+
+.circle-graph {
+  display: inline-flex;
+  max-width: 45%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #03b9b3;
+}
+
+.circular-chart.blue .circle {
+  stroke: #00a5fd;
+}
+
+.circular-chart.purple .circle {
+  stroke: #ba5db0;
+}
+
+.stats {
+  fill: #65717f;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.circle-words {
+  fill: #65717f;
+  font-size: 0.2em;
+  text-anchor: middle;
+}
+
+.bar-graph {
+  float: right; 
+}
+
+.image {
+  height: 320px;
+}
+
+/*graph buttons*/
+.graph-btns {
+  width: 25%;
+}
+
+
+
 
 
 
