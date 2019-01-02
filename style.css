@@ -7,21 +7,29 @@
 
 .container {
   display: grid;
-  grid-template-columns: 180px repeat(2, 1fr); 
-  grid-template-rows: repeat(6, 55px 100px 80px 1fr);
+  grid-template-columns: 1fr 5fr 3fr; 
   grid-template-areas: 
       "sidebar-nav  header    header"
       "sidebar-nav  topnav1   topnav2"
       "sidebar-nav  nav       nav"
-      "sidebar-nav  graph1    graph2"
-      "sidebar-nav  buttons   buttons"
+      "sidebar-nav  graph     graph"
       "sidebar-nav  table     social"
 }
 
 /*Left side vertical navigation*/
+li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+li:hover {
+  background: #313a4b;
+  border-left: 1px solid #00a4ff;
+}
 
 .profile {
  font-size: 8pt;
+ text-align: center;
 }
 
 #photo {
@@ -30,15 +38,19 @@
  width: 100px;
 }
 
+.fa-angle-down {
+  padding-left: 10px;
+}
+
 .sidebar-nav {
   background: #334052;
-  color: #fff;
+  color: #cecece;
   grid-area: sidebar-nav;
-  padding: 20px;
 }
 
 .titles {
-  font-size: 8pt;
+  color: #536073;
+  font-size: 10pt;
 }
 
 .side-lists {  
@@ -49,17 +61,41 @@
 
 .side-icons {
   align-content: center;
+  font-size: 12pt;
   margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .sidebar-line {
   border-bottom: .5px solid black;
 }
 
-/*header content*/
+.box1 {
+  color: #ffdb00;
+  margin-right: 5px;
+}
+
+.box2 {
+  color: #25b2f9;
+  margin-right: 5px;
+}
+
+.box3 {
+  color: #ed135d;
+  margin-right: 5px;
+}
+
+.box4 {
+  color: #00ae8a;
+  margin-right: 5px;
+}
+
+/* -- HEADER CONTENT -- */
+
 header {
-  grid-area: header;
   border-bottom: 1px solid lightgrey;
+  grid-area: header;
   padding-top: 10px;
 }
 
@@ -79,8 +115,8 @@ header {
 }
 #input-search {
   border: none;
-  width: 79%;
   margin-right: 20px;
+  width: 79%;
 }
 
 #user-plus {
@@ -104,11 +140,12 @@ header {
   padding: 10px;
 }
 
-/*edit-section*/
+/* -- EDIT SECTION -- */
+
 .edit-section {
   display: grid;
   grid-area: topnav1;
-  padding-left: 50px;
+  padding-left: 32px;
 }
 
 .service-rep {
@@ -118,7 +155,8 @@ header {
 
 .sanfran {
   color: #cdccd2;
-  margin-top: 0px;
+  margin-left: 2px;
+  margin-top: 3px;
 }
 
 .preview {
@@ -132,49 +170,52 @@ header {
 
 .edit-btns {
   display: inline-flex;
-  grid-area: topnav2;
   float: right;
-  justify-content: end;
-  margin-top: 40px;
+  grid-area: topnav2;
   height: 30px;
+  justify-content: end;
   margin-right: 10px;
+  margin-top: 40px;
 }
 
 .open {
-  color: #787879;
   border-radius: 30px;
-  padding: 5px;
+  color: #787879;
   margin-right: 10px;
+  padding: 5px;
 }
 
 #open-dot {
   color: #74cd00;
-  margin-right: 5px;
   font-size: 8pt;
+  margin-right: 5px;
 }
 
 .icon-btns{
   border-radius: 30px;
+  color: #787879;
   margin: 0px 5px 0px 5px;
  }
 
- /*Horizontal nav*/
+ /* -- HORIZONTAL NAV -- */
+
  .horizontal-nav {
-  display: inline-flex;
+  display: flex;
   grid-area: nav;
  }
 
  .nav {
-  margin: 30px 10px 0px 40px;
-  padding: 0px 25px 25px 25px;
   color: #787879;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 25px 25px 25px;
  }
 
  .nav:hover {
   border-bottom: 2px solid #00a4ff;
  }
 
- /*graphs*/
+ /* -- GRAPHS -- */
+
 .graphs {
   background: #ecf2f6;
   grid-column: span 2;
@@ -182,22 +223,22 @@ header {
 
 .circle-graph {
   display: inline-flex;
-  max-width: 45%;
-  margin-top: 40px;
   margin-left: 40px;
+  margin-top: 40px;
+  max-width: 45%;
 }
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
   stroke-width: 3.8;
+  stroke: #eee;
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
   animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.8;
 }
 
 @keyframes progress {
@@ -231,21 +272,258 @@ header {
 }
 
 .bar-graph {
-  float: right; 
+  display: inline; 
+  margin-left: 80px;
+  margin-top:;
 }
 
 .image {
-  height: 320px;
+  height: 80%;
 }
 
-/*graph buttons*/
+/* -- GRAPH BUTTONS -- */
+
 .graph-btns {
-  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.total-btn {
+  border-radius: 30px;
+  color: #65717f;
+  padding: 7px;
+}
+.app-btn {
+  border-radius: 30px; 
+  color: #65717f;
+  padding: 7px;
 }
 
+/* -- TABLE --*/
 
+.table-container {
+  background: #ecf2f6;
+  grid-area: table;
+}
 
+thead {
+  background: #6a7e97;
+  text-align: left;
+}
 
+.table {
+  background-color: #fff;
+  margin-bottom: 500px;
+  margin-left: 40px;
+  margin-top: 40px;
+  width: 90%;
+}
+
+th, td {
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.col-title {
+  color: #fff;
+}
+
+.title-button {
+  background-color: #7b8caa;
+  border:none;
+  color: #fff;
+  margin-left: 55px;
+  text-transform: uppercase;
+}
+
+#edit-title {
+  border: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.col1 {
+  color: #6a7e97;
+  font-weight: bold;
+}
+
+.col2 {
+  color: #787879;
+}
+
+.approved {
+  border: none;
+}
+
+.isaac {
+ border-radius: 50%;
+ display: inline-flex;
+ height: 95px;
+ width: 100px;
+}
+
+.name {
+  float: right;
+  margin-right: 300px;
+}
+
+/* -- Social -- */
+
+.social-channels {
+  background: #ecf2f6;
+}
+
+.social-buttons {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding: 15px;
+  width: 70%;
+}
+
+.social-action {
+  font-weight: bold;
+  justify-content: center;
+  margin: 0px;
+}
+
+.fb {
+  background: #4a6ec2;
+  color: #fff;
+  display: flex;
+  margin-top: 40px;
+}
+
+.twitter {
+  background: #00a8ef;
+  color: #fff;
+  display: flex;
+}
+
+.lin {
+  background: #0482bc;
+  color: #fff;
+  display: flex;
+}
+
+.fa-facebook-f {
+  font-size: 15pt;
+  margin-right: 80px;
+}
+
+.fa-twitter {
+  font-size: 15pt;
+  margin-right: 80px;
+
+}
+
+.fa-linkedin-in {
+  font-size: 15pt;
+  margin-right: 80px;
+}
+
+.link-to-job {
+  display: flex; 
+}
+
+/* -- INPUT FIELDS OF SOCIAL -- */
+
+.box {
+  margin: 15px 130px 0px 0px;
+}
+
+.fa-globe-europe,
+.fa-elementor,
+.fa-paper-plane {
+  color: #66707a;
+  font-size: 17pt;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #66707a;
+  font-size: 15pt;
+  font-weight: bold;
+  font-wieght: bold;
+  margin: 0px;
+}
+
+.lorem {
+  color: #787879;
+  margin-left: 10px;
+  width: 73%;
+}
+
+.input-link {
+  margin-left: 10px;
+  width: 56%;
+}
+
+.input-field {
+  border-bottom: 1px solid grey;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.copy {
+  background: #47b6c1;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/*-- MEDIA QUERIES --*/
+
+@media only screen and (max-width: 800px) {
+  #input-search {
+    width: 50%;
+  }
+
+  .horizontal-nav {
+    display: block;
+    grid-area: nav;
+    margin: 5px;
+ }
+
+  .edit-btns {
+    grid-area: topnav1;
+    margin-top: 120px;
+    margin-left: 33px;
+    justify-content: start;
+  }
+
+  .image {
+    height: 50%;
+  }
+
+  .graph-btns {
+    margin: 10px;
+    justify-content: start;
+  }
+
+  .table {
+    background-color: #fff;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+   .social-channels {
+    background: #ecf2f6;
+    grid-area: table;
+    margin-top: 830px;
+  }
+  .side-icons {
+    font-size: 7pt;
+  }
+
+  .side-lists {
+    font-size: 5pt;
+  }
+
+}
 
 
 

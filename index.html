@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>KL-Static-Comp</title>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +27,6 @@
         <p class="sidebar-line"></p>
       </section>
       <section class="side-admin-nav">
-        <!-- icons and list -->
         <p class="titles">Admin</p>
         <ul class="side-lists">
           <li><em class="side-icons"><i class="fas fa-users"></i></em>USERS</li>
@@ -36,14 +35,15 @@
           <li><em class="side-icons"><i class="fas fa-clipboard-list"></i></em>JOBBOARDS</li>
          <li><em class="side-icons"><i class="fas fa-share-alt"></i></em>SOCIAL</li>
         </ul>
+        <p class="sidebar-line"></p>
       </section>
       <section class="side-categories-nav">
         <p class="titles">Categories</p>
         <ul class="side-lists">
-          <li><em class="checkboxes box1"><i class="fas fa-check-square"></em></i>Adminstrative</li>
-          <li><em class="checkboxes box2"><i class="fas fa-square"></em></i>Design</li>
-          <li><em class="checkboxes box3"><i class="fas fa-square"></em></i>Executives</li>
-          <li><em class="checkboxes box4"><i class="fas fa-square"></em></i>Human Resources</li>
+          <li><em class="side-icons box1"><i class="fas fa-check-square"></em></i>Adminstrative</li>
+          <li><em class="side-icons box2"><i class="fas fa-square"></em></i>Design</li>
+          <li><em class="side-icons box3"><i class="fas fa-square"></em></i>Executives</li>
+          <li><em class="side-icons box4"><i class="fas fa-square"></em></i>Human Resources</li>
         </ul>
       </section>
     </aside>
@@ -125,10 +125,102 @@
             </svg>
       </article>
       <article class="bar-graph">
-      <img class="image" src="images/bar-graph.png">
+        <img class="image" src="images/bar-graph.png">
       </article>
-      <button class="graph-btns total">Totals - Out of 5,238 views</button>
-       <button class="graph-btns ad">APPLICANTS/DAY</button>
+      <section class="graph-btns">
+        <button class="total-btn">Totals - Out of 5,238 views</button>
+        <button class="app-btn">APPLICANTS/DAY</button>
+      </section>
+    </section>
+    <section class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="col-title" colspan="2">JOB DESCRIPTION<button class="title-button"><i id="edit-title" class="fas fa-pencil-alt">Edit</i></button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class= "col1">POSITION TITLE</td>
+            <td class= "col2">Customer Service Representative</td>
+        </tr>
+        <tr>
+          <td class="col1">LOCATION</td>
+          <td class= "col2">San Francisco CA</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap" class="col1">EMPLOYMENT TYPE</td>
+          <td class= "col2">Full-time</td>
+        </tr>
+        <tr>
+          <td class="col1">EXPERIENCE</td>
+          <td class= "col2">Mid-level</td>
+        </tr>
+        <tr>
+          <td class="col1">STATUS</td>
+          <td class= "col2">OPEN</td>
+        </tr>
+        <tr>
+          <td class="col1">DESCRIPTION</td>
+          <td class= "col2">The Customer Service Representative is responsible for interacting with and providing assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the badness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+        </tr>
+        <tr>
+          <td class="col1">HIRING LEAD</td>
+          <td class= "col2"><img class="isaac" src="images/Isaac Sunoo.jpg"><p class="name">Isaac Isuno</p></td>
+        </tr>
+        <tr>
+          <td class="col1 approved">APPROVED SALARY</td>
+          <td class= "col2 approved">$200,000</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="social-channels">
+      <article class="social-buttons fb">
+        <i class="fab fa-facebook-f"></i>
+        <p class="social-action">Post to Facebook</p>
+      </article>
+      <article class="social-buttons twitter">
+        <i class="fab fa-twitter"></i>
+        <p class="social-action">Tweet this Job</p>
+      </article>
+      <article class="social-buttons lin">
+        <i class="fab fa-linkedin-in"></i>
+        <p class="social-action">Post to LinkedIn</p>
+      </article>
+      <article class="box">
+        <section class="link-to-job">
+          <i class="fas fa-globe-europe"></i>
+          <p class="text">Link to this Job</p>
+        </section>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section class="input-field">
+          <input class="input-link" type="text" name="" placeholder="www.alinktonowhere.com">
+          <button class="input-btn copy">Copy</button>
+        </section>
+      </article>
+      <article class="box">
+        <section class="link-to-job">
+          <i class="fab fa-elementor"></i>
+          <p class="text">Use the Button Widget</p>
+        </section>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section class="input-field">
+          <input class="input-link" type="text" name="" placeholder="www.alinktonowhere.com">
+          <button class="input-btn copy">Copy</button>
+        </section>
+      </article>
+       <article class="box">
+        <section class="link-to-job">
+          <i class="fas fa-paper-plane"></i>
+          <p class="text">Upload Resume by Email</p>
+        </section>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <section class="input-field">
+          <input class="input-link" type="text" name="" placeholder="www.alinktonowhere.com">
+          <button class="input-btn copy">Copy</button>
+        </section>
+      </article>
     </section>
     <footer></footer>
   </main>
@@ -137,5 +229,6 @@
         
 
          
+       
       
 
