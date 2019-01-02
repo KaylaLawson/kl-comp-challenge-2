@@ -7,14 +7,12 @@
 
 .container {
   display: grid;
-  grid-template-columns: 180px repeat(2, 1fr); 
-  grid-template-rows: repeat(6, 55px 100px 80px 1fr);
+  grid-template-columns: 1fr 5fr 3fr; 
   grid-template-areas: 
       "sidebar-nav  header    header"
       "sidebar-nav  topnav1   topnav2"
       "sidebar-nav  nav       nav"
       "sidebar-nav  graph     graph"
-      "sidebar-nav  buttons   buttons"
       "sidebar-nav  table     social"
 }
 
@@ -56,7 +54,7 @@
   border-bottom: .5px solid black;
 }
 
-/*header content*/
+/* -- HEADER CONTENT -- */
 header {
   grid-area: header;
   border-bottom: 1px solid lightgrey;
@@ -104,7 +102,7 @@ header {
   padding: 10px;
 }
 
-/*edit-section*/
+/* -- EDIT SECTION -- */
 .edit-section {
   display: grid;
   grid-area: topnav1;
@@ -158,7 +156,7 @@ header {
   margin: 0px 5px 0px 5px;
  }
 
- /*Horizontal nav*/
+ /* -- HORIZONTAL NAV -- */
  .horizontal-nav {
   display: inline-flex;
   grid-area: nav;
@@ -174,7 +172,7 @@ header {
   border-bottom: 2px solid #00a4ff;
  }
 
- /*graphs*/
+ /* -- GRAPHS -- */
 .graphs {
   background: #ecf2f6;
   grid-column: span 2;
@@ -231,15 +229,16 @@ header {
 }
 
 .bar-graph {
-  float: right; 
+  display: inline; 
+  margin-left: 80px;
+  margin-top:;
 }
 
 .image {
-  height: 320px;
-  margin-left: 150px;
+  height: 50%;
 }
 
-/*graph buttons*/
+/* -- GRAPH BUTTONS -- */
 .total-btn {
   margin: 50px 0px 20px 300px;
   padding: 10px;
@@ -251,7 +250,171 @@ header {
   margin: 50px 0px 20px 685px;
 }
 
+/* -- TABLE --*/
+.table-container {
+  background: #ecf2f6;
+  grid-area: table;
+}
 
+thead {
+  text-align: left;
+  background: #6a7e97;
+}
+
+.table {
+  background-color: #fff;
+  width: 90%;
+  margin-left: 40px;
+  margin-bottom: 500px;
+}
+
+th, td {
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.col-title {
+  color: #fff;
+}
+
+.title-button {
+  color: #fff;
+  background-color: #7b8caa;
+  text-transform: uppercase;
+  border:none;
+  margin-left: 55px;
+}
+
+#edit-title {
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.col1 {
+  font-weight: bold;
+  color: #6a7e97;
+}
+
+.col2 {
+  color: #787879;
+}
+
+.approved {
+  border: none;
+}
+
+.isaac {
+ display: inline-flex;
+ border-radius: 50%;
+ height: 95px;
+ width: 100px;
+}
+
+.name {
+  float: right;
+  margin-right: 300px;
+}
+
+/* -- Social -- */
+
+.social-channels {
+  background: #ecf2f6;
+}
+
+.social-buttons {
+  width: 70%;
+  margin: 15px 15px;
+  padding: 15px;
+}
+
+.social-action {
+  margin: 0px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.fb {
+  display: flex;
+  background: #4a6ec2;
+  color: #fff;
+}
+
+.twitter {
+  display: flex;
+  background: #00a8ef;
+  color: #fff;
+}
+
+.lin {
+  display: flex;
+  background: #0482bc;
+  color: #fff;
+}
+
+.fa-facebook-f {
+  margin-right: 80px;
+  font-size: 15pt;
+}
+
+.fa-twitter {
+  margin-right: 80px;
+  font-size: 15pt;
+
+}
+
+.fa-linkedin-in {
+  margin-right: 80px;
+  font-size: 15pt;
+}
+
+.link-to-job {
+  display: flex; 
+}
+
+/* -- INPUT FIELDS OF SOCIAL -- */
+
+.box {
+  margin-top: 45px;
+}
+.fa-globe-europe {
+  color: #66707a;
+  font-size: 17pt;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.link-text {
+  color: #66707a;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 15pt;
+  font-wieght: bold;
+}
+
+.lorem {
+  color: #787879;
+  width: 73%;
+  margin-left: 10px;
+}
+
+.input-link {
+  width: 56%;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: flex;
+}
+
+.copy {
+  background: #47b6c1;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+}
 
 
 
