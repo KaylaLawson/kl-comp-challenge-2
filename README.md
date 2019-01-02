@@ -9,3 +9,7 @@ I feel I did get a good understanding however it took a while for things to clic
 I am still working on creating and efficient site so media queries can be used less. 
 
 Challenges was getting fixated on things that didn’t need fixating. 
+
+## Fun note: 
+
+Please open in firefox. the circle graph, required for the project is not appearing in chrome. 
