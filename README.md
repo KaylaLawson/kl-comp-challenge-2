@@ -12,4 +12,7 @@ Challenges was getting fixated on things that didn’t need fixating.
 
 ## Fun note: 
 
-Please open in firefox. the circle graph, required for the project is not appearing in chrome. 
+Please open in firefox. the circle graph, required for the project is not appearing in chrome.
+
+![screenshot_2019-01-02 kl-static-comp](https://user-images.githubusercontent.com/37053236/50583361-edefb800-0e25-11e9-82ce-949a11ae710c.png)
+
