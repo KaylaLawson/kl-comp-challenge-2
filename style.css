@@ -17,9 +17,19 @@
 }
 
 /*Left side vertical navigation*/
+li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+li:hover {
+  background: #313a4b;
+  border-left: 1px solid #00a4ff;
+}
 
 .profile {
  font-size: 8pt;
+ text-align: center;
 }
 
 #photo {
@@ -28,15 +38,19 @@
  width: 100px;
 }
 
+.fa-angle-down {
+  padding-left: 10px;
+}
+
 .sidebar-nav {
   background: #334052;
-  color: #fff;
+  color: #cecece;
   grid-area: sidebar-nav;
-  padding: 20px;
 }
 
 .titles {
-  font-size: 8pt;
+  color: #536073;
+  font-size: 10pt;
 }
 
 .side-lists {  
@@ -47,17 +61,41 @@
 
 .side-icons {
   align-content: center;
+  font-size: 12pt;
   margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .sidebar-line {
   border-bottom: .5px solid black;
 }
 
+.box1 {
+  color: #ffdb00;
+  margin-right: 5px;
+}
+
+.box2 {
+  color: #25b2f9;
+  margin-right: 5px;
+}
+
+.box3 {
+  color: #ed135d;
+  margin-right: 5px;
+}
+
+.box4 {
+  color: #00ae8a;
+  margin-right: 5px;
+}
+
 /* -- HEADER CONTENT -- */
+
 header {
-  grid-area: header;
   border-bottom: 1px solid lightgrey;
+  grid-area: header;
   padding-top: 10px;
 }
 
@@ -77,8 +115,8 @@ header {
 }
 #input-search {
   border: none;
-  width: 79%;
   margin-right: 20px;
+  width: 79%;
 }
 
 #user-plus {
@@ -107,7 +145,7 @@ header {
 .edit-section {
   display: grid;
   grid-area: topnav1;
-  padding-left: 50px;
+  padding-left: 32px;
 }
 
 .service-rep {
@@ -117,7 +155,8 @@ header {
 
 .sanfran {
   color: #cdccd2;
-  margin-top: 0px;
+  margin-left: 2px;
+  margin-top: 3px;
 }
 
 .preview {
@@ -131,29 +170,30 @@ header {
 
 .edit-btns {
   display: inline-flex;
-  grid-area: topnav2;
   float: right;
-  justify-content: end;
-  margin-top: 40px;
+  grid-area: topnav2;
   height: 30px;
+  justify-content: end;
   margin-right: 10px;
+  margin-top: 40px;
 }
 
 .open {
-  color: #787879;
   border-radius: 30px;
-  padding: 5px;
+  color: #787879;
   margin-right: 10px;
+  padding: 5px;
 }
 
 #open-dot {
   color: #74cd00;
-  margin-right: 5px;
   font-size: 8pt;
+  margin-right: 5px;
 }
 
 .icon-btns{
   border-radius: 30px;
+  color: #787879;
   margin: 0px 5px 0px 5px;
  }
 
@@ -165,9 +205,9 @@ header {
  }
 
  .nav {
-  margin: 30px 10px 0px 20px;
-  padding: 0px 25px 25px 25px;
   color: #787879;
+  margin: 10px 10px 0px 10px;
+  padding: 0px 25px 25px 25px;
  }
 
  .nav:hover {
@@ -183,22 +223,22 @@ header {
 
 .circle-graph {
   display: inline-flex;
-  max-width: 45%;
-  margin-top: 40px;
   margin-left: 40px;
+  margin-top: 40px;
+  max-width: 45%;
 }
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
   stroke-width: 3.8;
+  stroke: #eee;
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
   animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.8;
 }
 
 @keyframes progress {
@@ -249,12 +289,14 @@ header {
   margin-top: 10px;
 }
 .total-btn {
-  padding: 7px;
   border-radius: 30px;
+  color: #65717f;
+  padding: 7px;
 }
 .app-btn {
-  padding: 7px;
   border-radius: 30px; 
+  color: #65717f;
+  padding: 7px;
 }
 
 /* -- TABLE --*/
@@ -265,16 +307,16 @@ header {
 }
 
 thead {
-  text-align: left;
   background: #6a7e97;
+  text-align: left;
 }
 
 .table {
   background-color: #fff;
-  width: 90%;
-  margin-left: 40px;
   margin-bottom: 500px;
+  margin-left: 40px;
   margin-top: 40px;
+  width: 90%;
 }
 
 th, td {
@@ -287,22 +329,22 @@ th, td {
 }
 
 .title-button {
-  color: #fff;
   background-color: #7b8caa;
-  text-transform: uppercase;
   border:none;
+  color: #fff;
   margin-left: 55px;
+  text-transform: uppercase;
 }
 
 #edit-title {
-  color: #fff;
   border: none;
+  color: #fff;
   padding: 10px;
 }
 
 .col1 {
-  font-weight: bold;
   color: #6a7e97;
+  font-weight: bold;
 }
 
 .col2 {
@@ -314,8 +356,8 @@ th, td {
 }
 
 .isaac {
- display: inline-flex;
  border-radius: 50%;
+ display: inline-flex;
  height: 95px;
  width: 100px;
 }
@@ -332,51 +374,51 @@ th, td {
 }
 
 .social-buttons {
-  width: 70%;
   margin-bottom: 15px;
   margin-left: 10px;
   padding: 15px;
-  margin-top: 40px;
+  width: 70%;
 }
 
 .social-action {
-  margin: 0px;
-  justify-content: center;
   font-weight: bold;
+  justify-content: center;
+  margin: 0px;
 }
 
 .fb {
-  display: flex;
   background: #4a6ec2;
   color: #fff;
+  display: flex;
+  margin-top: 40px;
 }
 
 .twitter {
-  display: flex;
   background: #00a8ef;
   color: #fff;
+  display: flex;
 }
 
 .lin {
-  display: flex;
   background: #0482bc;
   color: #fff;
+  display: flex;
 }
 
 .fa-facebook-f {
-  margin-right: 80px;
   font-size: 15pt;
+  margin-right: 80px;
 }
 
 .fa-twitter {
-  margin-right: 80px;
   font-size: 15pt;
+  margin-right: 80px;
 
 }
 
 .fa-linkedin-in {
-  margin-right: 80px;
   font-size: 15pt;
+  margin-right: 80px;
 }
 
 .link-to-job {
@@ -386,7 +428,7 @@ th, td {
 /* -- INPUT FIELDS OF SOCIAL -- */
 
 .box {
-  margin-top: 20px;
+  margin: 15px 130px 0px 0px;
 }
 
 .fa-globe-europe,
@@ -400,37 +442,88 @@ th, td {
 
 .text {
   color: #66707a;
-  font-weight: bold;
-  margin: 0px;
   font-size: 15pt;
+  font-weight: bold;
   font-wieght: bold;
+  margin: 0px;
 }
 
 .lorem {
   color: #787879;
-  width: 73%;
   margin-left: 10px;
+  width: 73%;
 }
 
 .input-link {
-  width: 56%;
   margin-left: 10px;
+  width: 56%;
 }
 
 .input-field {
-  display: flex;
   border-bottom: 1px solid grey;
+  display: flex;
   padding-bottom: 20px;
 }
 
 .copy {
   background: #47b6c1;
+  border: none;
   color: #fff;
   font-weight: bold;
-  border: none;
   padding: 10px;
 }
 
+/*-- MEDIA QUERIES --*/
+
+@media only screen and (max-width: 800px) {
+  #input-search {
+    width: 50%;
+  }
+
+  .horizontal-nav {
+    display: block;
+    grid-area: nav;
+    margin: 5px;
+ }
+
+  .edit-btns {
+    grid-area: topnav1;
+    margin-top: 120px;
+    margin-left: 33px;
+    justify-content: start;
+  }
+
+  .image {
+    height: 50%;
+  }
+
+  .graph-btns {
+    margin: 10px;
+    justify-content: start;
+  }
+
+  .table {
+    background-color: #fff;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+   .social-channels {
+    background: #ecf2f6;
+    grid-area: table;
+    margin-top: 830px;
+  }
+  .side-icons {
+    font-size: 7pt;
+  }
+
+  .side-lists {
+    font-size: 5pt;
+  }
+
+}
 
 
 
