@@ -6,13 +6,13 @@ Goal was to really grasp the concept of using grid within CSS.
 
 I feel I did get a good understanding however it took a while for things to click for me. 
 
-I am still working on creating and efficient site so media queries can be used less. 
+I am still working on creating  media queries for the site. 
 
-Challenges was getting fixated on things that didn’t need fixating. 
+The svg circles were not working for me on the last comp so I decided to just recreate them with a what I can understand. They are not animated on load but I feel good about understanding the code. 
 
 ## Fun note: 
 
 Please open in firefox. the circle graph, required for the project is not appearing in chrome.
 
-![screenshot_2019-01-02 kl-static-comp](https://user-images.githubusercontent.com/37053236/50583361-edefb800-0e25-11e9-82ce-949a11ae710c.png)
+
 
