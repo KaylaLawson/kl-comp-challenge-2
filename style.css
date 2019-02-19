@@ -17,9 +17,11 @@
 }
 
 /*Left side vertical navigation*/
+
 li {
   padding-bottom: 10px;
   padding-top: 10px;
+  border: 1px solid transparent;
 }
 
 li:hover {
@@ -29,12 +31,14 @@ li:hover {
 
 .profile {
  font-size: 8pt;
+ padding-top: 20px;
  text-align: center;
 }
 
 #photo {
  border-radius: 50%;
  height: 100px;
+ maring-top: 10px;
  width: 100px;
 }
 
@@ -46,6 +50,7 @@ li:hover {
   background: #334052;
   color: #cecece;
   grid-area: sidebar-nav;
+  width: 160px;
 }
 
 .titles {
@@ -135,9 +140,19 @@ header {
   padding: 10px;
 }
 
+#clip-list:hover {
+  background-color: #00a4ff;
+  color: #fff; 
+}
+
 #th {
   color: #cdccd2;
   padding: 10px;
+}
+
+#th:hover {
+  background-color: #00a4ff;
+  color: #fff; 
 }
 
 /* -- EDIT SECTION -- */
@@ -208,6 +223,7 @@ header {
   color: #787879;
   margin: 10px 10px 0px 10px;
   padding: 0px 25px 25px 25px;
+  border: 2px solid transparent;
  }
 
  .nav:hover {
@@ -217,6 +233,8 @@ header {
  /* -- GRAPHS -- */
 
 .graphs {
+  display: flex;
+  justify-content: space-between;
   background: #ecf2f6;
   grid-column: span 2;
 }
@@ -228,75 +246,20 @@ header {
   max-width: 45%;
 }
 
-.circle-bg {
-  fill: none;
-  stroke-width: 3.8;
-  stroke: #eee;
-}
-
-.circle {
-  animation: progress 1s ease-out forwards;
-  fill: none;
-  stroke-linecap: round;
-  stroke-width: 2.8;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-.circular-chart.green .circle {
-  stroke: #03b9b3;
-}
-
-.circular-chart.blue .circle {
-  stroke: #00a5fd;
-}
-
-.circular-chart.purple .circle {
-  stroke: #ba5db0;
-}
-
-.stats {
-  fill: #65717f;
-  font-size: 0.5em;
-  text-anchor: middle;
-}
-
 .circle-words {
   fill: #65717f;
   font-size: 0.2em;
   text-anchor: middle;
 }
 
+.numbers {
+  font-size: .5em;
+}
+
 .bar-graph {
   display: inline; 
   margin-left: 80px;
   margin-top:;
-}
-
-.image {
-  height: 80%;
-}
-
-/* -- GRAPH BUTTONS -- */
-
-.graph-btns {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-}
-.total-btn {
-  border-radius: 30px;
-  color: #65717f;
-  padding: 7px;
-}
-.app-btn {
-  border-radius: 30px; 
-  color: #65717f;
-  padding: 7px;
 }
 
 /* -- TABLE --*/
@@ -370,14 +333,18 @@ th, td {
 /* -- Social -- */
 
 .social-channels {
+  display: flex;
+  flex-direction: column;
   background: #ecf2f6;
+  width: 100%;
 }
 
 .social-buttons {
   margin-bottom: 15px;
   margin-left: 10px;
   padding: 15px;
-  width: 70%;
+  justify-content: space-evenly;
+  width: 90%;
 }
 
 .social-action {
@@ -428,6 +395,9 @@ th, td {
 /* -- INPUT FIELDS OF SOCIAL -- */
 
 .box {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   margin: 15px 130px 0px 0px;
 }
 
@@ -456,7 +426,7 @@ th, td {
 
 .input-link {
   margin-left: 10px;
-  width: 56%;
+  width: 90%;
 }
 
 .input-field {
