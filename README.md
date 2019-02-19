@@ -14,5 +14,7 @@ The svg circles were not working for me on the last comp so I decided to just re
 
 Please open in firefox. the circle graph, required for the project is not appearing in chrome.
 
+![screencapture-file-users-groot-desktop-mod1-static-comp2-index-html-2019-02-19-16_38_25](https://user-images.githubusercontent.com/37053236/53055752-18ddac00-3466-11e9-99f6-e47abbb597e2.png)
+
 
 
